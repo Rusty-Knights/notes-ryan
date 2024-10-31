@@ -42,6 +42,8 @@ fn some_function(s1: &String) {}
 let s2 = &s1;
 ```
 
+##
+
 ### Mutable References
 - Only one mutable reference per datum
 - Only can exist for mutable variables
