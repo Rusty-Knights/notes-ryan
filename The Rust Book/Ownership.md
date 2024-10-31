@@ -42,7 +42,13 @@ fn some_function(s1: &String) {}
 let s2 = &s1;
 ```
 
-##
+#### String Slices
+```rust
+let mut s = String::from("Hello World!");
+let hello = &str[..5] // beginning 0 is optional
+let world = &str[6..] // ending 11 is optional
+let hello_world = &str[..] // entire string
+```
 
 ### Mutable References
 - Only one mutable reference per datum
