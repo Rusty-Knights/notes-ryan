@@ -45,16 +45,31 @@ let sum = x + y.unwrap_or(0); // use default value if None
 All possible cases must be addressed.
 
 ```rust
+enum UsState {
+	Alabama,
+	Alaska,
+	Arizona,
+	// ...
+}
+
 enum Coin {
 	Penny,
 	Nickel,
 	Dime,
-	Quarter
+	Quarter(UsState)
 }
 
 fn process(coin: Coin) -> u8 {
 	match coin {
-	
+		Coin::Penny => {
+			println!("Lucky penny!");
+			1
+		}
+		Coin::Nickel => 5,
+		Coin::Dime => 10,
+		Coin::Quarter(state: UsState) => {{
+			println!("A QuState:")
+		}
 	}
 }
 ```
