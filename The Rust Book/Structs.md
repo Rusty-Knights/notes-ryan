@@ -54,6 +54,28 @@ fn main() {
 }
 ```
 
+## Implementations
+```rust
+struct Rectangle {
+	width: u32,
+	height: u32
+}
+
+impl Rectangle {
+	fn area(&self) -> u32 {
+		self.width * self.height
+	}
+}
+
+fn main() {
+	let rect = Rectangle {
+		width: 30
+		height: 20
+	}
+
+	println!("area: {}", rect.area())
+}
+```
 ## Traits
 ### Applying a trait
 ```rust
@@ -65,15 +87,15 @@ struct User {
 }
 ```
 
-Traits of Note:
-- Debug
-  For printing
+### Traits of Note
+#### Debug
+  For basic printing
 ```rust
 println!("some_struct: {:?}", some_struct); // One line
 println!("some_struct: {:#?}", some_struct); // Pretty
 ```
-- Display
-  For printing
+#### Display
+  For custom printing. See Chapter 10 for defining how a stuct will print.
 ```rust
 println!("some_struct: {}", some_struct);
 ```
