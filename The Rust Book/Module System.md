@@ -28,7 +28,9 @@
 - Each file under bin/ is a binary crate 
 
 ## Modules
-Modules can contain modules ad infinitum.
+- Modules can contain modules ad infinitum.
+- All contents are private by default.
+	- Structs must declare each attribute to be public, enums do not
 ```rust
 mod some_mod {
 	mod some_child_mod {
@@ -70,5 +72,21 @@ mod back_of_house {
 	}
 
 	fn cook_order() {}
+}
+```
+
+Using `use`
+```rust
+mod front_of_house {
+	pub mod hosting {
+		pub fn add_to_waitlist() {}
+	}
+}
+
+use self::front_of_house::hosting; // relative
+use crate::front_of_house::hosting; // absolute
+
+pub fn eat_at_restaurant() {
+	hosting::add_to_waitlist();
 }
 ```
