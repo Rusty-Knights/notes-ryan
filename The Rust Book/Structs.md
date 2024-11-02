@@ -67,7 +67,7 @@ impl Rectangle {
 		self.width * self.height
 	}
 
-	// Associative Function
+	// Associative Function, no &self argument
 	fn square(size: u32) -> Rectangle {
 		Rectangle {
 			width: size,
@@ -82,7 +82,11 @@ fn main() {
 		height: 20
 	};
 
+	// Call method
 	println!("area: {}", rect.area());
+
+	// Call associative function
+	let rect2_square = Rectangle::square(25);
 }
 ```
 ## Traits
