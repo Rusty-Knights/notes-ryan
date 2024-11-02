@@ -53,3 +53,27 @@ fn main() {
 	}
 }
 ```
+
+## Traits
+### Applying a trait
+```rust
+#[derive(Debug)] // apply the Debug trait
+struct User {
+	username: String
+	email: String
+	active: bool
+}
+```
+
+Traits of Note:
+- Debug
+  For printing
+```rust
+println!("some_struct: {:?}", some_struct); // One line
+println!("some_struct: {:#?}", some_struct); // Pretty
+```
+- Display
+  For printing
+```rust
+println!("some_struct: {}", some_struct);
+```
