@@ -94,7 +94,9 @@ match some_value {
 	_ => ()
 }
 
-// Could be rewritten with if/let syntax. Is not exaustive, only covers some and none
+// Could be rewritten with if/let syntax. Is not exaustive, only covers conditional given
+// Meant to be read backwards: if some_value equals Some(3).
+// Yes, the single equals is correct :|
 if let Some(3) = some_value {
 	println!("three");
 }
