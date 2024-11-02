@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Rust Book/Ownership.md",
+                "file": "The Rust Book/Structs.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "19c53868fd2068f8",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Rust Book/Ownership.md",
+                "file": "The Rust Book/Structs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Rust Book/Ownership.md",
+                "file": "The Rust Book/Structs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Rust Book/Ownership.md"
+                "file": "The Rust Book/Structs.md"
               }
             }
           }
@@ -169,13 +168,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "a651901d890c4cb8",
   "lastOpenFiles": [
-    "The Rust Book/Common Programming Concepts.md",
     "The Rust Book/Ownership.md",
+    "The Rust Book/Structs.md",
+    "The Rust Book/Common Programming Concepts.md",
     "Pasted image 20241029215438.png",
     "The Rust Book",
     "README.md"

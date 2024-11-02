@@ -67,7 +67,7 @@ let hello_world = &str[..] // entire string
 let hello_world: &str = "hello world" // string literals are stored as &str
 ```
 
-## Slices
+## Arrays & Slices
 ```rust
 let array: [i32, _] = [1, 2, 3, 4, 5] // array of unknown size
 let slice: &[i32] = &array[0..2] // similar to string slices
