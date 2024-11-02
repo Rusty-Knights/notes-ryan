@@ -58,7 +58,6 @@ enum Coin {
 	Nickel,
 	Dime,
 	Quarter(UsState)
-	
 }
 
 fn process(coin: Coin) -> u8 {
@@ -84,5 +83,19 @@ fn plus_one(num: Option<i32>) -> Option<i32> {
 		None => None,
 		Some(i) => Some(i + 1) // Must return Option enum type
 	}
+}
+```
+
+Can do nothing
+```rust
+let some_value = Some(3);
+match some_value {
+	Some(3) => println!("three"),
+	_ => ()
+}
+
+// Could be rewritten with if/let syntax. Is not exaustive, only covers some and none
+if let Some(3) = some_value {
+	println!("three");
 }
 ```
