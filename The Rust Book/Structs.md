@@ -62,8 +62,17 @@ struct Rectangle {
 }
 
 impl Rectangle {
+	// Method
 	fn area(&self) -> u32 {
 		self.width * self.height
+	}
+
+	// Associative Function
+	fn square(size: u32) -> Rectangle {
+		Rectangle {
+			width: size,
+			height: size
+		}
 	}
 }
 
@@ -71,9 +80,9 @@ fn main() {
 	let rect = Rectangle {
 		width: 30
 		height: 20
-	}
+	};
 
-	println!("area: {}", rect.area())
+	println!("area: {}", rect.area());
 }
 ```
 ## Traits
