@@ -32,8 +32,36 @@ Modules can contain modules ad infinitum.
 ```rust
 mod some_mod {
 	mod some_child_mod {
-		fn some_fun
+		fn some_func() {}
+	}
+
+	mod some_other_child_mod {
+		fn some_func() {}
 	}
 }
 ```
 
+### Calling module functions
+Absolute vs Relative paths
+```rust
+mod front_of_house {
+	pub mod hosting { // is private by default
+		pub fn add_to_waitlist() {} // is private by default
+	}
+}
+
+pub fn eat_at_restaurant() {
+	// Absolute path
+	crate::front_of_house::hosting::add_to_waitlist();
+
+	// Relative path
+	front_of_house::hosting::add_to_waitlist();
+}
+```
+
+Parent and sibling functions
+```rust
+fn serve_order() {
+
+}
+```
