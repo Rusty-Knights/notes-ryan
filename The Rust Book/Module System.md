@@ -1,13 +1,10 @@
 ## Hierarchy
 - Packages
-  
 	- Crates
-	  Sections within a package, like a directory
 		- Modules
-		  Code within a Crate, like a file
 
 ## Packages
-- Created with `cargo new package_name`
+- Created with `cargo new [--lib] package_name`
 - A package must have at least one crate
 - A package can have a max of 1 library crate, unlimited bin crates
 
@@ -16,6 +13,7 @@
 - Have crate roots
 	- a src file that the Rust compiler starts at when building the crate
 	- implicitly are also the root module
+
 ### main.rs
 - New packages with src/main.rs will have an implicit bin crate
 	- Has the same name as the package
@@ -25,4 +23,17 @@
 - New packages with src/lib.rs will have an implicit lib crate
 	- Has the same name as the package
 	- Uses src/lib.rs as the crate root
+
+### bin/
+- Each file under bin/ is a binary crate 
+
+## Modules
+Modules can contain modules ad infinitum.
+```rust
+mod some_mod {
+	mod some_child_mod {
+		fn some_fun
+	}
+}
+```
 
