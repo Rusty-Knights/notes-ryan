@@ -49,7 +49,12 @@ let s2 = &s1;
 ## Working with Strings
 ### Iterating
 ```rust
-let 
+let s = String::from("hello world");
+let bytes = s.as_bytes();
+
+for (i, &item) in bytes.iter().enumerate() {
+	println!("{}", item)
+}
 ```
 
 ### String Slices
