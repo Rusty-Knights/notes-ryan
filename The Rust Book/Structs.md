@@ -1,3 +1,18 @@
+## Types
+Standard Structs
+```rust
+struct User {
+	username: String
+	email: String
+	active: bool
+}
+```
+
+Tuple structs
+```rust
+struct RGBColor(i32, i32, i32)
+struct XYZPoint(i32, i32, i32) // Not interchangable with RGBColor
+```
 ## Syntax
 Field init shorthand
 ```rust
