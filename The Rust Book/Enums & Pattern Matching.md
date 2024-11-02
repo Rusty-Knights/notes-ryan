@@ -45,6 +45,7 @@ let sum = x + y.unwrap_or(0); // use default value if None
 All possible cases must be addressed.
 
 ```rust
+#[derive(Debug)]
 enum UsState {
 	Alabama,
 	Alaska,
@@ -57,6 +58,7 @@ enum Coin {
 	Nickel,
 	Dime,
 	Quarter(UsState)
+	
 }
 
 fn process(coin: Coin) -> u8 {
@@ -68,8 +70,19 @@ fn process(coin: Coin) -> u8 {
 		Coin::Nickel => 5,
 		Coin::Dime => 10,
 		Coin::Quarter(state: UsState) => {{
-			println!("A QuState:")
+			println!("A quarter from {:?} State!", state);
+			25
 		}
+	}
+}
+```
+
+Can use Option Enum
+```rust
+fn plus_one(num: Option<i32>) -> Option<i32> {
+	match x {
+		None => None,
+		Some(i) => Some(i + 1) // Must return Option enum type
 	}
 }
 ```
