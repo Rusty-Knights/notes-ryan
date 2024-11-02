@@ -45,6 +45,7 @@ let s2 = &s1;
 ### Mutable References
 - Only one mutable reference per datum
 - Only can exist for mutable variables
+- Cannot share scope with read-only reference???
 
 ## Working with Strings
 ### Iterating
@@ -63,4 +64,10 @@ let mut s = String::from("Hello World!");
 let hello = &str[..5] // beginning 0 is optional
 let world = &str[6..] // ending 11 is optional
 let hello_world = &str[..] // entire string
+let hello_world: &str = "hello world" // string literals are stored as &str
+```
+
+## Slices
+```rust
+
 ```
