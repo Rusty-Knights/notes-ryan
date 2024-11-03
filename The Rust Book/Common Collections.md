@@ -47,8 +47,20 @@ println!("immutable ref: {}", third); // Uses immutable
 ```
 
 ## String
-### Initializing
+### Initialization
 ```rust
-let v = String::from("Hello World!");
+let s: String = String::from("Hello World!");
+let s: &str = "Hello World!"
+let s: String = "Hello World!".to_string()
+```
 
+### Concatenation
+```rust
+let s: String = String::from("foo");
+s.push_str("bar"); // push a &str
+s.push('!'); // push a char
+
+let s1 = String::from("Hello, ");
+let s2 = String::from("world!");
+let s3 = s1 + &s2; // Moves ownership of s1 to s3. Can no longer use s1.
 ```
