@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Rust Book/Generic Types.md",
+                "file": "The Rust Book/Traits.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Rust Book/Generic Types.md",
+                "file": "The Rust Book/Traits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Rust Book/Generic Types.md",
+                "file": "The Rust Book/Traits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Rust Book/Generic Types.md"
+                "file": "The Rust Book/Traits.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "992a9855859d0cfc",
   "lastOpenFiles": [
-    "The Rust Book/Error Handling.md",
     "The Rust Book/Generic Types.md",
+    "The Rust Book/Traits.md",
+    "The Rust Book/Error Handling.md",
     "README.md",
     "The Rust Book/Common Programming Concepts.md",
     "The Rust Book/Enums & Pattern Matching.md",
