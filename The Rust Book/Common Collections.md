@@ -33,8 +33,13 @@ match v.get(2) {
 ```
 
 ### Common error
+Cannot change a value to which there is already an immutable reference. When the immutable referenced is printed, it is expected that the underlying value.
 ```rust
 let mut v = vec![1, 2, 3, 4, 5];
-let third = &v[2];
-v.push(6); // 
+
+let third = &v[2]; // Borrows as immutable
+
+v.push(6); // Cannot borrow v as mutable if it is already borrowed as immutable.
+
+println!("immutable ref: {}", third); // Uses immutable
 ```
