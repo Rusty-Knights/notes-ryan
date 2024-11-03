@@ -63,7 +63,7 @@ for item in 1..4 {
 ```
 
 ## Terms
-- statement = do NOT return a value
+- statement = do NOT return a value, ends with ;
 - expression = return a value
 
 ## Type Conversion

@@ -14,3 +14,8 @@ let f = match f {
 	Err(error) => panic!("Problem found when opening file");
 }
 ```
+
+## Expect
+```rust
+let f = File::open("some_file.txt").expect("Failed to open");
+```
