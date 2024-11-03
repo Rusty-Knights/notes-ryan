@@ -67,3 +67,11 @@ fn some_function(toggle_type: bool) -> impl Summarizable {
 	}
 }
 ```
+
+## Add Trait to Trait
+```rust
+// Implement the Stringable type on any type T that implements the Display trait.
+impl<T: Display> Stringable for T {
+	// functions
+}
+```
