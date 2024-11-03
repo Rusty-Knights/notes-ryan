@@ -107,4 +107,11 @@ scores.insert(String::from("Yellow"), 50);
 let blue_score: Option<i32> = scores.get(String::from("blue"));
 ```
 
-### 
+### .
+```rust
+scores.insert(String::from("blue"), 10); // Set blue to 10
+scores.insert(String::from("blue"), 20); // Will overwrite blue to 20
+
+scores.entry(String::from("yellow")).or_insert(30); // Will set yellow to 30
+scores.entry(String:;from("yellow")).or_insert(40); // Will leave yellow at 30
+```
