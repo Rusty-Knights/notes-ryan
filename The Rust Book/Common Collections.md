@@ -70,3 +70,28 @@ let s3 = format!("{}{}", s1, s2); // No ownership is given
 let s3 = s1 + &s2; // Moves ownership of s1 to s3. Can no longer use s1.
 
 ```
+
+### Iteration
+```rust
+use unicode_segmentation::UnicodeSegmentation;
+
+// Bytes
+for b in "hello".bytes() {
+	println!("{}", b);
+}
+
+// Scalar values
+for c in "hello".chars() {
+	println!("{}", c);
+}
+
+// Grapheme clusters
+for g in "hello".graphemes(true) {
+	println!("{}", g);
+}
+```
+
+## HashMaps
+- Key/Value Pairs of any type
+- `use std::collections::HashMap`
+- 
