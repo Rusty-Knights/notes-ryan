@@ -30,6 +30,12 @@ pub trait Summarizable {
 
 ## Use a Trait Implementation
 ```rust
+// Basic usage, confirms that item is a specific type as well, in case we introduce item2, item3, or itemN args.
+pub fn notify<T: Summarizable>(item &T) {
+	println!("Summary: {}", item.summarize());
+}
+
+// With syntactic sugar, does not enforce implementing type like above
 pub fn notify(item: &impl Summarizable) {
 	println!("Summary: {}", item.summarize());
 }
