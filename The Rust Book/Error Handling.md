@@ -55,16 +55,9 @@ let contents = fs::read_to_string("some_file.txt"); // Return Result<String, io:
 
 // Create  file if not exists
 let path = "some_file.txt";
-let contents = fs::read_to_string(&path).unwrap_or_else(|error: Error| {
-	if error.kind() == ErrorKind::NotFound {
-		File::create(&path)?
-		""
-	} else {
-		panic!("Failed to read {}: {}", path, error);
-	}
-});
+let contents = cat(&path, true)
 
-fn cat(create_if_not_exists: bool) -> &str {
+fn cat(path: &str, create_if_not_exists: bool) -> &str {
 	fs::read_to_string(&path).unwrap_or_else(|error: Error| {
 		if create_if_not_exists && error.kind() == ErrorKind::NotFound {
 			File::create(&path)?
