@@ -31,3 +31,10 @@ match v.get(2) {
 	None => println!("There is no third element.")
 }
 ```
+
+### Common error
+```rust
+let mut v = vec![1, 2, 3, 4, 5];
+let third = &v[2];
+v.push(6); // 
+```
