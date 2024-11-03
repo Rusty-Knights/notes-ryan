@@ -18,5 +18,29 @@ fn max<T: PartialOrd + Copy>(values: Vec<T>) -> T {
 
 ## With Structs
 ```rust
+// Allows for using ints and floats for either x or y
+// CAUTION: no traits limit the generics here
+struct Point<T, U> {
+	x: T,
+	y: U
+}
 
+impl<U, V> Point<U, V> {
+	fn x(&self) -> 
+}
 ```
+
+## With Enums
+```rust
+enum Option<T> {
+	Some(T),
+	None
+}
+
+enum Result<T, E> {
+	Ok(T),
+	Error(E)
+}
+```
+
+##
