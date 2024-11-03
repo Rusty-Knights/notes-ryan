@@ -107,7 +107,8 @@ scores.insert(String::from("Yellow"), 50);
 let blue_score: Option<i32> = scores.get(String::from("blue"));
 ```
 
-### .
+### .entry function
+Returns a mutable reference to the value in the map, even if no insertion occurs
 ```rust
 scores.insert(String::from("blue"), 10); // Set blue to 10
 scores.insert(String::from("blue"), 20); // Will overwrite blue to 20
