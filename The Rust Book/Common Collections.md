@@ -45,3 +45,10 @@ v.push(6); // Cannot borrow v as mutable if it is already borrowed as immutable.
 
 println!("immutable ref: {}", third); // Uses immutable
 ```
+
+## String
+### Initializing
+```rust
+let v = String::from("Hello World!");
+
+```
