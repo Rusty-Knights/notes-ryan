@@ -96,12 +96,14 @@ pub fn eat_at_restaurant() {
 }
 ```
 
-Importing module from adjacent file
+Importing modules from adjacent files
+Can define each module in separate files
 ```rust
 // front_of_house/hosting.rs
 pub fn some_other_function() {};
 
 // front_of_house.rs
+mod hosting;
 pub fn some_function() {};
 
 // main.rs

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Rust Book/Module System.md",
+                "file": "The Rust Book/Common Collections.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Rust Book/Module System.md",
+                "file": "The Rust Book/Common Collections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Rust Book/Module System.md",
+                "file": "The Rust Book/Common Collections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Rust Book/Module System.md"
+                "file": "The Rust Book/Common Collections.md"
               }
             }
           }
@@ -174,8 +174,9 @@
   },
   "active": "a651901d890c4cb8",
   "lastOpenFiles": [
-    "The Rust Book/Enums & Pattern Matching.md",
     "The Rust Book/Module System.md",
+    "The Rust Book/Common Collections.md",
+    "The Rust Book/Enums & Pattern Matching.md",
     "The Rust Book/Structs.md",
     "The Rust Book/Ownership.md",
     "The Rust Book/Common Programming Concepts.md",
