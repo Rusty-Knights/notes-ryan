@@ -47,6 +47,10 @@ println!("immutable ref: {}", third); // Uses immutable
 ```
 
 ## String
+- Is stored in UTC-8
+- Each character could be 1, 2, 3, or 4 bytes
+- &str[0] wouldn't work since the first byte may not be a full char
+
 ### Initialization
 ```rust
 let s: String = String::from("Hello World!");
@@ -62,5 +66,7 @@ s.push('!'); // push a char
 
 let s1 = String::from("Hello, ");
 let s2 = String::from("world!");
+let s3 = format!("{}{}", s1, s2); // No ownership is given
 let s3 = s1 + &s2; // Moves ownership of s1 to s3. Can no longer use s1.
+
 ```
