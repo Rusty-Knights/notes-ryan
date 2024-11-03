@@ -29,6 +29,7 @@ pub trait Summarizable {
 ```
 
 ## Use a Trait Implementation
+### Use Single Trait
 ```rust
 // Basic usage, confirms that item is a specific type as well, in case we introduce item2, item3, or itemN args.
 pub fn notify<T: Summarizable>(item &T) {
@@ -39,4 +40,21 @@ pub fn notify<T: Summarizable>(item &T) {
 pub fn notify(item: &impl Summarizable) {
 	println!("Summary: {}", item.summarize());
 }
+```
+
+### Use Multiple Traits
+```rust
+// With + syntax
+fn some_function<T: Display + Clone, U: Clone + Debug>(t: &T, u: &U) {}
+
+// With where clause
+fn some_function<T, U>(t: &T, u: &U) {
+	where T: Display + Clone,
+			U: Clone + Debug
+}
+```
+
+### Return Trait Implementation
+```rust
+fn some_function() -> impl Summarizable {}
 ```
