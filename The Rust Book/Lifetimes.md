@@ -1,3 +1,4 @@
+To instruct the borrow checker how long references last.
 ## The Problem
 Lifetimes protects against dangling references.
 ```rust
@@ -20,10 +21,14 @@ x and y have unknown lifetimes
 fn fickle(sometimes: bool, x: &str, y: &str) -> &str {
 	if sometimes { x } else { y }
 }
+```
 
-// fixed
+## Solution
+```rust
 // lifetime 'a is expected to be the smallest lifetime between x and y
 fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> &'a str { 
 	if sometimes { x } else { y }
 }
 ```
+
+NOTE: A lifetime in the return value must be applied to parameters as well.
