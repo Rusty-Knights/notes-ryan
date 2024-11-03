@@ -20,4 +20,9 @@ x and y have unknown lifetimes
 fn fickle(sometimes: bool, x: &str, y: &str) -> &str {
 	if sometimes { x } else { y }
 }
+
+// fixed
+fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> &'a str { // li
+	if sometimes { x } else { y }
+}
 ```
