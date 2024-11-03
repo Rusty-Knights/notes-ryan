@@ -34,3 +34,15 @@ fn read_some_file() -> Result<io::Error> {
 	let f = File::open("some_file.txt")?;
 }
 ```
+- Allows for method chaining
+```rust
+fn cat() -> Result<String, io::Error> {
+	let mut s = String::new();
+	
+	// If error in opening or reading file, return early
+	File::open("some_file.txt")?.read_to_string(&mut s)?; 
+
+	// Return a success result of type string
+	Ok(s)
+}
+```
