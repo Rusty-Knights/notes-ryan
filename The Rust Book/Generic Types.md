@@ -25,8 +25,17 @@ struct Point<T, U> {
 	y: U
 }
 
-impl<U, V> Point<U, V> {
-	fn x(&self) -> 
+impl<V, W> Point<V, W> {
+	fn x(&self) -> &V {
+		&self.x
+	}
+}
+
+// How do I define a y method for implementations besides f64?
+impl Point<f64, f64> {
+	fn y(&self) -> f64 {
+		self.y
+	}
 }
 ```
 
