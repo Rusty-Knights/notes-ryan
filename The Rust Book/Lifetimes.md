@@ -22,7 +22,8 @@ fn fickle(sometimes: bool, x: &str, y: &str) -> &str {
 }
 
 // fixed
-fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> &'a str { // li
+// lifetime 'a is expected to be the smallest lifetime between x and y
+fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> &'a str { 
 	if sometimes { x } else { y }
 }
 ```
