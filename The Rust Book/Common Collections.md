@@ -94,4 +94,17 @@ for g in "hello".graphemes(true) {
 ## HashMaps
 - Key/Value Pairs of any type
 - `use std::collections::HashMap`
-- 
+
+### Initialization
+```rust
+use std::collections::HashMap
+
+let mut scores = HashMap::new();
+
+scores.insert(String::from("blue"), 10);
+scores.insert(String::from("Yellow"), 50);
+
+let blue_score: Option<i32> = scores.get(String::from("blue"));
+```
+
+### 
