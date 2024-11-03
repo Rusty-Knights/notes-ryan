@@ -57,4 +57,13 @@ fn some_function<T, U>(t: &T, u: &U) {
 ### Return Trait Implementation
 ```rust
 fn some_function() -> impl Summarizable {}
+
+// CAUTION: Can only return one type of trait implementation. Cannot have the possiblity of returning multiple types that implement the trait. See chapter 17 for workaround.
+fn some_function(toggle_type: bool) -> impl Summarizable {
+	if toggle_type {
+		NewsArticle {}
+	}
+		Tweet {} // Not allowed, must return one implementation type!
+	}
+}
 ```
