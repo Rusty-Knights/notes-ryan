@@ -17,5 +17,20 @@ let f = match f {
 
 ## Expect
 ```rust
-let f = File::open("some_file.txt").expect("Failed to open");
+let f = File::open("some_file.txt").expect("Failed to open file");
+
+// Identical to match statement
+let f = match f {
+	Ok(file) => file,
+	Err(error) => panic!("Failed to open file");
+}
+```
+
+## ? Syntax
+- Will return early with the error
+- Allows calling function to handle error
+```rust
+fn read_some_file() -> Result<io::Error> {
+	let f = File::open("some_file.txt")?;
+}
 ```
