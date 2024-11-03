@@ -1,7 +1,9 @@
-Vectors, Strings, and HashMaps
-All stored on heap, so all 
+- Vectors, Strings, and HashMaps
+- Have dynamic sizes
+- Are all stored on heap, so are dropped once they fall out of scope
 
 ## Vectors
+### Initialization
 ```rust
 // New Vector
 let v: Vec<i32> = Vec::new();
@@ -14,4 +16,18 @@ v2.push(3);
 
 // New vector with elements, oneline, type inferred
 let v3 = vec![1, 2, 3];
+```
+
+### Access Elements
+```rust
+let v = vec![1, 2, 3, 4, 5];
+
+// CAUTION: could reference element out of bounds
+let third = &v[2];
+
+// SAFE
+match v.get(2) {
+	Some(third) => println!("The third element is {}", third),
+	None => println!("There is no third element.")
+}
 ```
