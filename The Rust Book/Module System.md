@@ -85,6 +85,8 @@ mod front_of_house {
 
 use self::front_of_house::hosting; // relative
 use crate::front_of_house::hosting; // absolute
+use self::front_of_house::hosting as h // with alias
+
 
 pub fn eat_at_restaurant() {
 	hosting::add_to_waitlist();
