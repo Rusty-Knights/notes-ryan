@@ -98,9 +98,13 @@ pub fn eat_at_restaurant() {
 
 Importing module from adjacent file
 ```rust
-// main.rs
-mod front_of_house
+// front_of_house/hosting.rs
+pub fn some_other_function() {};
 
 // front_of_house.rs
-pub fn some_function() {}'
+pub fn some_function() {};
+
+// main.rs
+mod front_of_house;
+
 ```
