@@ -14,8 +14,10 @@ let r;
 println!("r: {}", r); // r is a dangling reference
 ```
 
+x and y have unknown lifetimes
 ```rust
-fn fickle(sometimes: bool) -> &str { // error: missing lifetime specifier. This function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `x` or `y 
+// error: missing lifetime specifier. This function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `x` or `y 
+fn fickle(sometimes: bool, x: &str, y: &str) -> &str {
 	if sometimes { x } else { y }
 }
 ```
