@@ -33,7 +33,9 @@ match v.get(2) {
 ```
 
 ### Common error
-Cannot change a value to which there is already an immutable reference. When the immutable referenced is printed, it is expected that the underlying value.
+Cannot change a value to which there is already an immutable reference. When the immutable referenced is printed, it is expected that the underlying value has not changed.
+
+Pushing a new element might trigger a expansion, where the underlying array is replaced by a duplicate with double the capacity and values are copied over. In that case, the original immutable reference would be pointed to an erroneous section of memory.
 ```rust
 let mut v = vec![1, 2, 3, 4, 5];
 
