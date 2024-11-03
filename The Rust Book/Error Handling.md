@@ -54,9 +54,15 @@ use std::fs::{self, File};
 let contents = fs::read_to_string("some_file.txt"); // Return Result<String, io::Error>
 
 // Create that file if not exists
-let contents = match fs::read_to_string("some_file.txt") {
+let contents = fs::read_to_string("some_file.txt").unwrap_or_else(|error: Error| {
+	if error.kind() == ErrorKind::NotFound {
+		File::create
+	}
+}) {
 	Ok(contents) => contents,
-	Err(e) => match e::kind()
+	Err(e) => match e.kind() {
+		ErrorKind::NotFound => 
+	}
 }
 ```
 
