@@ -86,9 +86,21 @@ mod front_of_house {
 use self::front_of_house::hosting; // relative
 use crate::front_of_house::hosting; // absolute
 use self::front_of_house::hosting as h // with alias
+use rand::Rng; // import vendor modules
+use std::io::{self, Write}; // import vendor modules with similar paths
+use std::io::* // import all from module
 
 
 pub fn eat_at_restaurant() {
 	hosting::add_to_waitlist();
 }
+```
+
+Importing module from adjacent file
+```rust
+// main.rs
+mod front_of_house
+
+// front_of_house.rs
+pub fn some_function() {}'
 ```
