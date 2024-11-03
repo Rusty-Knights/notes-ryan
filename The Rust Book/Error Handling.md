@@ -29,7 +29,6 @@ let f = match f {
 ## ? Syntax
 - Will return early with the error
 - Allows calling function to handle error
-- Cannot be used in main()
 ```rust
 fn read_some_file() -> Result<io::Error> {
 	let f = File::open("some_file.txt")?;
@@ -52,5 +51,16 @@ fn cat() -> Result<String, io::Error> {
 ```rust
 use std::fs::{self, File};
 
-fs::read_to_string("some_file.txt"); // Return Result<String, io::Error>
+let contents = fs::read_to_string("some_file.txt"); // Return Result<String, io::Error>
+
+// Create that file if not exists
+let contents = match fs::read_to_string("some_file.txt") {
+	Ok(contents) => contents,
+	Err(e) => match e::kind()
+}
+```
+
+## Return any type of Error
+```rust
+fn main -> Result<(), Box<dyn Error>> {} // wow!
 ```
