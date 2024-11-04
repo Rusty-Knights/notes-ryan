@@ -52,7 +52,7 @@ fn main() {
 ```
 
 ## Automatically Applied Lifetimes
-The compiler will automatically apply lifetimes according to these rules:
+The compiler will automatically apply lifetimes according to the rules below. I explicitly show the lifetimes in the code to demonstrate what the compiler will automatically add.
 - Each parameter that is a reference get its own lifetime parameter.
 ```rust
 fn some_func(some_param1: &'a str, some_param2: &'b str) {}
@@ -62,4 +62,10 @@ fn some_func(some_param1: &'a str, some_param2: &'b str) {}
 ```rust
 fn some_func(some_param1: &'a str) -> &'a str {}
 ```
+
 - If there are multiple input lifetime parameters, but one of them is &self or &mut self, the lifetime of self is assigned to all output lifetime parameters.
+```rust
+impl some_implementation {
+	fn some_method(&'a self, &'b str, &'c str) -> &'a str
+}
+```
