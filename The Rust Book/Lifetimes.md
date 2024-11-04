@@ -27,13 +27,25 @@ fn fickle(sometimes: bool, x: &str, y: &str) -> &str {
 ```rust
 // lifetime 'a is expected to be the smallest lifetime between x and y
 fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> &'a str { 
-	if sometimes { x.to_string() } else { y.to_string() }
+	if sometimes { x } else { y }
 }
 
-// otherwise, an owned type can be returned
-fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> String { 
+// otherwise, an owned type can be returned, or some other copy
+fn fickle(sometimes: bool, x: &str, y: &str) -> String { 
 	if sometimes { x.to_string() } else { y.to_string() }
 }
 ```
 
 NOTE: The lifetime of each variable introduced in the function is understood to be the scope of the function. Therefore, a lifetime in the return value means that there should be a lifetime on at least one parameter.
+
+## In Structs
+```rust
+struct SomeStruct<'a> {
+	some_attr: &'a str
+}
+
+fn main() {
+	let value = "some string";
+	let 
+}
+```
