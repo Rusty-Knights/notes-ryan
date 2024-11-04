@@ -51,6 +51,13 @@ fn main() {
 }
 ```
 
+With implementation
+```rust
+impl<'a> SomeStruct<'a> {
+	fn some_method(&self) {}
+}
+```
+
 ## Automatically Applied Lifetimes
 The compiler will automatically apply lifetimes according to the rules below. I explicitly show the lifetimes in the code to demonstrate what the compiler will automatically add.
 - Each parameter that is a reference get its own lifetime parameter.
