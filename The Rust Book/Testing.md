@@ -28,14 +28,31 @@ assert!(
 );
 ```
 
+## Using Result instead of assert
+```rust
+#[test] 
+
+fn some_test() {
+	panic("msg");
+}
+```
+
 ## Expect Panic
+Without specific panic message
+```rust
+#[test] 
+#[should_panic]
+fn some_test() {
+	panic("msg");
+}
+```
+
+With specific panic message
 ```rust
 #[cfg(test)]
-mod tests {
-	#[test] 
-	#[should_panic]
-	fn some_test() {
-		panic("msg");
-	}
+#[test] 
+#[should_panic(expected = "descriptive message")]
+fn some_test() {
+	panic("descriptive message");
 }
 ```
