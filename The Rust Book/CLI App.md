@@ -16,6 +16,6 @@ fn main() {
 use std::fs
 
 fn main() {
-	let contents - fs/
+	let contents = fs::read_to_string("some_file.txt").expect("oops");
 }
 ```
