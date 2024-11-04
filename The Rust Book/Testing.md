@@ -24,6 +24,18 @@ assert!(
 	actual == expected, // test
 	"expected {}, got {}", // failure message
 	expected, // fill first placeholder in message
-	actual // fill first placeholder in message
+	actual // fill second placeholder in message
 );
+```
+
+## Expect Panic
+```rust
+#[cfg(test)]
+mod tests {
+	#[test] 
+	#[should_panic]
+	fn some_test() {
+		panic("msg");
+	}
+}
 ```
