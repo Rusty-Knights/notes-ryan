@@ -45,7 +45,7 @@ struct SomeStruct<'a> {
 }
 
 fn main() {
-	let value = "some string";
-	let 
+	let value: &str = "some string";
+	let some_struct = SomeStruct { some_attr: value }
 }
 ```
