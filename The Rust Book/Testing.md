@@ -2,7 +2,7 @@ For testing the *intent* of the code.
 
 ## Create a Simple Test
 ```rust
-#[cfg(test)] // Marks a testing module
+#[cfg(test)] // Marks a testing module, stands for configuration: test
 mod tests {
 	#[test] // Marks that a function is a test, instead of a helper function
 	fn some_test() {
@@ -56,7 +56,6 @@ fn some_test() {
 
 With specific panic message
 ```rust
-#[cfg(test)]
 #[test] 
 #[should_panic(expected = "descriptive message")]
 fn some_test() {
@@ -64,6 +63,14 @@ fn some_test() {
 }
 ```
 
+### Ignoring Tests
+```rust
+#[test] 
+#[ignore]
+fn expensive_test() {
+	// This could take an hour to run.
+}
+```
 ## Running Tests
 ### Cargo run
 ```bash
@@ -82,4 +89,9 @@ cargo test [pattern] # Will run all tests that contain the pattern in their name
 Running a module
 ```bash
 cargo test module_name::
+```
+
+Running ignored tests
+```bash
+cargo test -- --ignored
 ```
