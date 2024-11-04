@@ -27,8 +27,13 @@ fn fickle(sometimes: bool, x: &str, y: &str) -> &str {
 ```rust
 // lifetime 'a is expected to be the smallest lifetime between x and y
 fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> &'a str { 
-	if sometimes { x } else { y }
+	if sometimes { x.to_string() } else { y.to_string() }
+}
+
+// otherwise, an owned type can be returned
+fn fickle<'a>(sometimes: bool, x: &'a str, y: &'a str) -> String { 
+	if sometimes { x.to_string() } else { y.to_string() }
 }
 ```
 
-NOTE: A lifetime in the return value must be applied to parameters as well.
+NOTE: The lifetime of each variable introduced in the function is understood to be the scope of the function. Therefore, a lifetime in the return value means that there should be a lifetime on at least one parameter.
