@@ -17,3 +17,13 @@ assert!(value); // Assert value is true
 assert_eq!(value1, value2); // Assert values are equal
 assert_ne!(value1, value2); // Assert values are not equal
 ```
+
+### Custom failure messages
+```rust
+assert!(
+	actual == expected, // test
+	"expected {}, got {}", // failure message
+	expected, // fill first placeholder in message
+	actual // fill first placeholder in message
+);
+```
