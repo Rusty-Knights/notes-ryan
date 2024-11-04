@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Rust Book/Lifetimes.md",
+                "file": "The Rust Book/Testing.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "19c53868fd2068f8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Rust Book/Lifetimes.md",
+                "file": "The Rust Book/Testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Rust Book/Lifetimes.md",
+                "file": "The Rust Book/Testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Rust Book/Lifetimes.md"
+                "file": "The Rust Book/Testing.md"
               }
             }
           }
@@ -150,12 +149,13 @@
   },
   "active": "992a9855859d0cfc",
   "lastOpenFiles": [
+    "The Rust Book/Lifetimes.md",
+    "The Rust Book/Testing.md",
     "The Rust Book/Common Programming Concepts.md",
     "The Rust Book/Enums & Pattern Matching.md",
     "The Rust Book/Generic Types.md",
     "The Rust Book/Ownership.md",
     "The Rust Book/Module System.md",
-    "The Rust Book/Lifetimes.md",
     "The Rust Book/Traits.md",
     "The Rust Book/Error Handling.md",
     "README.md",
