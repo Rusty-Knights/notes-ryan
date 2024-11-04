@@ -63,3 +63,10 @@ fn some_test() {
 	panic("descriptive message");
 }
 ```
+
+## Running Tests
+```bash
+cargo test
+```
+- Launches a separate thread to run all tests.
+- Test output, like any `println!`, is not printed
