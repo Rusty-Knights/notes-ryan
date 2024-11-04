@@ -39,7 +39,7 @@ fn fickle(sometimes: bool, x: &str, y: &str) -> String {
 NOTE: The lifetime of each variable introduced in the function is understood to be the scope of the function. Therefore, a lifetime in the return value means that there should be a lifetime on at least one parameter.
 
 ## In Structs
-Once `value` is out of scope, `some_attr` will be a dangling reference. The life
+Once `value` is out of scope, `some_attr` will be a dangling reference. The lifetime 'a prevents this.
 ```rust
 struct SomeStruct<'a> {
 	some_attr: &'a str
@@ -50,3 +50,8 @@ fn main() {
 	let some_struct = SomeStruct { some_attr: value }
 }
 ```
+
+## Automated Lifetimes
+- Each parameter that is a reference get its own lifetime parameter.
+- If there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters.
+- If there are multiple input lifetime parameters, but one of them is &self or &mut self, the lifetime of self is assigned to all output lifetime parameters.
