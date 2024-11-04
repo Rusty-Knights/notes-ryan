@@ -65,9 +65,21 @@ fn some_test() {
 ```
 
 ## Running Tests
+### Cargo run
 ```bash
 cargo test
 ```
 - Launches a separate thread for each test to run in parallel.
 	- CAUTION: Can cause race condition if editing same file.
 - Test output, like any `println!` statements, are not printed.
+	- Can see output if use `cargo test -- --show-output`.
+
+Running one test
+```bash
+cargo test [pattern] # Will run all tests that contain the pattern in their name
+```
+
+Running a module
+```bash
+cargo test module_name::
+```
