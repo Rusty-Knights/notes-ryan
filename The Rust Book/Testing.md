@@ -68,5 +68,6 @@ fn some_test() {
 ```bash
 cargo test
 ```
-- Launches a separate thread to run all tests.
-- Test output, like any `println!`, is not printed
+- Launches a separate thread for each test to run in parallel.
+	- CAUTION: Can cause race condition if editing same file.
+- Test output, like any `println!` statements, are not printed.
