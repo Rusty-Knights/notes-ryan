@@ -95,3 +95,15 @@ Running ignored tests
 ```bash
 cargo test -- --ignored
 ```
+
+## Integration Tests
+- Unit tests are specified in the same file as production code.
+- Integration tests are stored in tests/
+```rust
+use adder; // Makes each file in tests/ its own crate.
+
+#[test]
+fn some_test() {
+	assert!(adder::some_module::some_child_module::some_func);
+}
+```
