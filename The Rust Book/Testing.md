@@ -96,6 +96,11 @@ Running ignored tests
 cargo test -- --ignored
 ```
 
+Running only integration tests
+```bash
+cargo test --test integration_test
+```
+
 ## Integration Tests
 - Unit tests are specified in the same file as production code.
 - Integration tests are stored in tests/
@@ -107,3 +112,8 @@ fn some_test() {
 	assert!(adder::some_module::some_child_module::some_func);
 }
 ```
+
+### Common code
+- Stored in tests/common/mod.rs
+- Imported with `mod common;` at the top of a file.
+- Functions are used like `common::setup()`
