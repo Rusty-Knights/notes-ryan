@@ -31,9 +31,16 @@ assert!(
 ## Using Result instead of assert
 ```rust
 #[test] 
+fn some_test() -> Result<(). String> {
+	let expected = 0;
+	let actual = actual_func();
 
-fn some_test() {
-	panic("msg");
+	match actual {
+		expected => Ok(()),
+		1 => Err(String::from("There was a 1!")),
+		2 => Err(String::from("There was a 2!")),
+		3 => Err(String::from("There was a 3!")),
+	}
 }
 ```
 
