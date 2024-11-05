@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Rust Book/Testing.md",
+                "file": "The Rust Book/CLI App.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Rust Book/Testing.md",
+                "file": "The Rust Book/CLI App.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Rust Book/Testing.md",
+                "file": "The Rust Book/CLI App.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Rust Book/Testing.md"
+                "file": "The Rust Book/CLI App.md"
               }
             }
           }
@@ -149,20 +149,20 @@
   },
   "active": "992a9855859d0cfc",
   "lastOpenFiles": [
+    "The Rust Book/Error Handling.md",
+    "The Rust Book/Module System.md",
+    "The Rust Book/Ownership.md",
+    "The Rust Book/Structs.md",
+    "The Rust Book/Testing.md",
     "The Rust Book/Traits.md",
     "The Rust Book/CLI App.md",
-    "The Rust Book/Testing.md",
     "The Rust Book/Lifetimes.md",
     "The Rust Book/Common Programming Concepts.md",
     "The Rust Book/Enums & Pattern Matching.md",
     "The Rust Book/Generic Types.md",
-    "The Rust Book/Ownership.md",
-    "The Rust Book/Module System.md",
-    "The Rust Book/Error Handling.md",
     "README.md",
     "The Rust Book/Common Collections.md",
     "Pasted image 20241029215438.png",
-    "The Rust Book/Structs.md",
     "The Rust Book"
   ]
 }
