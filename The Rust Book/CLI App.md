@@ -13,9 +13,8 @@ fn main() {
 
 ## Connect main.rs to lib.rs
 - Make everything that should be accessible in lib.rs public
-- Add `use project_name::impored`
-```rust
-```
+- Add `use project_name::some_func/mod/struct` to main.rs
+	- lib.rs is automatically under a crate named after the project
 
 ## Read file
 .read_to_string returns a Result
