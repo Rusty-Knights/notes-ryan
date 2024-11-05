@@ -21,6 +21,13 @@ fn main() {
 }
 ```
 
+### Iterate over lines
+```rust
+for line in content.lines() {
+	// stuff
+}
+```
+
 ## Exit with a code
 ```rust
 use std::process;
