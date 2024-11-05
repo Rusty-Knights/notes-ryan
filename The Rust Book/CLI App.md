@@ -11,6 +11,12 @@ fn main() {
 }
 ```
 
+## Connect main.rs to lib.rs
+- Make everything that should be accessible in lib.rs public
+- Add `use project_name::impored`
+```rust
+```
+
 ## Read file
 .read_to_string returns a Result
 ```rust
