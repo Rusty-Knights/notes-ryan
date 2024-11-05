@@ -28,6 +28,14 @@ for line in content.lines() {
 }
 ```
 
+## Use env variables
+```rust
+use std::env;
+
+fn main() {
+	let is_set = env::var("SOME_VAR").is_err();
+}
+```
 ## Exit with a code
 ```rust
 use std::process;
