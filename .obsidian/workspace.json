@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a942a2afbde1bf4b",
+        "id": "375508dd2dd1ffca",
         "type": "tabs",
         "children": [
           {
-            "id": "992a9855859d0cfc",
+            "id": "35fce8c3cc13fd61",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "The Rust Book/CLI App.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -39,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,14 +64,17 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "19c53868fd2068f8",
@@ -85,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Rust Book/CLI App.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +97,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -102,10 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Rust Book/CLI App.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -116,7 +123,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -124,9 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "The Rust Book/CLI App.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
@@ -141,21 +150,21 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "992a9855859d0cfc",
+  "active": "35fce8c3cc13fd61",
   "lastOpenFiles": [
+    "The Rust Book/CLI App.md",
+    "Untitled.md",
     "The Rust Book/Error Handling.md",
     "The Rust Book/Module System.md",
     "The Rust Book/Ownership.md",
     "The Rust Book/Structs.md",
     "The Rust Book/Testing.md",
     "The Rust Book/Traits.md",
-    "The Rust Book/CLI App.md",
     "The Rust Book/Lifetimes.md",
     "The Rust Book/Common Programming Concepts.md",
     "The Rust Book/Enums & Pattern Matching.md",
