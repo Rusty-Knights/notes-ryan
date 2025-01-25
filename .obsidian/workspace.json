@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "375508dd2dd1ffca",
+        "id": "db582cd108bc2656",
         "type": "tabs",
         "children": [
           {
-            "id": "35fce8c3cc13fd61",
+            "id": "4cc6fd4b8ebc7515",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "The Rust Book/Error Handling.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Error Handling"
+              "title": "New tab"
             }
           }
         ]
@@ -52,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " ? ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,12 +69,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "19c53868fd2068f8",
@@ -159,23 +155,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "35fce8c3cc13fd61",
+  "active": "4cc6fd4b8ebc7515",
   "lastOpenFiles": [
-    "The Rust Book/CLI App.md",
+    "The Rust Book/Traits.md",
     "Untitled.md",
+    "Pasted image 20241029215438.png",
     "The Rust Book/Error Handling.md",
+    "The Rust Book/CLI App.md",
     "The Rust Book/Module System.md",
     "The Rust Book/Ownership.md",
     "The Rust Book/Structs.md",
     "The Rust Book/Testing.md",
-    "The Rust Book/Traits.md",
     "The Rust Book/Lifetimes.md",
     "The Rust Book/Common Programming Concepts.md",
     "The Rust Book/Enums & Pattern Matching.md",
     "The Rust Book/Generic Types.md",
     "README.md",
     "The Rust Book/Common Collections.md",
-    "Pasted image 20241029215438.png",
     "The Rust Book"
   ]
 }
