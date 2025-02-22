@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "db582cd108bc2656",
+        "id": "ec1643dee3cc38da",
         "type": "tabs",
         "children": [
           {
-            "id": "4cc6fd4b8ebc7515",
+            "id": "1ddcb7e918c0bfd6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "The Rust Book/Error Handling.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Error Handling"
             }
           }
         ]
@@ -36,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -48,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,12 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "19c53868fd2068f8",
@@ -155,8 +160,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4cc6fd4b8ebc7515",
+  "active": "1ddcb7e918c0bfd6",
   "lastOpenFiles": [
+    "? operator.md",
     "The Rust Book/Traits.md",
     "Untitled.md",
     "Pasted image 20241029215438.png",
