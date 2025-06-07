@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3bc1770bc32765a9",
+        "id": "5ce9123faf52fa7b",
         "type": "tabs",
         "children": [
           {
-            "id": "b77f1b761968541c",
+            "id": "407f5599e8c37e1d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,7 +157,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b77f1b761968541c",
+  "active": "407f5599e8c37e1d",
   "lastOpenFiles": [
     "The Rust Book/Error Handling.md",
     "? operator.md",
